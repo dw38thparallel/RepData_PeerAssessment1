@@ -8,6 +8,11 @@ output:
 
 ## Loading and preprocessing the data
 
+```{r, echo = TRUE}
+download.file("http://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip", "activity.zip")
+data <- read.csv(unz("activity.zip", "activity.csv"))
+```
+
 
 
 ## What is mean total number of steps taken per day?
